@@ -1,17 +1,44 @@
-section{
+section {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem 10rem;
 }
 
-.figure{
+.figure {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 400px;
   height: 400px;
-  background-color: #A9A9A9;
-  margin: 2rem;  
+  background-color: #a9a9a9;
+  margin: 1rem;
 }
 
+.figure p {
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 100%;
+    padding: 1rem;
+  }
+  .subtitle{
+    text-align: center;
+  }
+
+  .figure{
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Estilos para telas pequenas (celulares) */
+@media (max-width: 400px) {
+  section {
+    width: 100%;
+    padding: 10px;
+  }
+}
